@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
+    <event name="model_rules_save_before">
+        <observer name="logTimeBeforeSave" instance="Magenest\Rules\Observer\LogTimeBeforeSave" />
+    </event>
+    <event name="model_rules_save_after">
+        <observer name="logTimeAfterSave" instance="Magenest\Rules\Observer\LogTimeAfterSave" />
+    </event>
+</config>

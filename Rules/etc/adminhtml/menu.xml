@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Magenest_Rules::mrules_parent"
+             title="Magenest Rules"
+             dependsOnModule="Magenest_Rules"
+             module="Magenest_Rules"
+             sortOrder="55"
+             resource="Magenest_Rules::mrules_parent"
+        />
+        <add id="Magenest_Rules::mrules_index"
+             title="Magenest Rules Index"
+             module="Magenest_Rules"
+             action="mrules/mrules/index/"
+             sortOrder="56"
+             parent="Magenest_Rules::mrules_parent"
+             resource="Magenest_Rules::mrules_index"
+        />
+        <add id="Magenest_Rules::mrules_create"
+             title="Magenest Rules Create"
+             module="Magenest_Rules"
+             action="mrules/mrules/create/"
+             sortOrder="57"
+             parent="Magenest_Rules::mrules_parent"
+             resource="Magenest_Rules::mrules_create"
+        />
+    </menu>
+</config>
