@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Cache/etc/cache.xsd">
+    <type name="rule" translate="label,description" instance="Magenest\Rules\Model\Cache\Rule">
+        <label>Rule</label>
+        <description>Rule cache.</description>
+    </type>
+</config>
